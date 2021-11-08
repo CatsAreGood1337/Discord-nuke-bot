@@ -19,6 +19,7 @@
 - create <str: название канала> - создает огромное количество каналов с определенным названием [8]
 - delete - удаляет все каналы [6]
 - kick - кикает всех с сервера [4]
+- roles - удаляет все роли [6]
 
 
 ### Установка:
@@ -51,7 +52,7 @@
 - create <str: channel name> - creates a lot (rly a lot) of channels with name you want [8]
 - delete - deletes all channels [6]
 - kick - kicks everyone except admins and bots [4]
-
+- roles - deletes all roles [6]
 
 ### Installation:
 ##### 1. Install required libraries
