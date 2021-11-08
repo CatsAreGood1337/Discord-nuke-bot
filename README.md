@@ -8,7 +8,7 @@
 - [x] Спама каналами
 - [ ] Спама во все каналы @everyone
 - [ ] Удаления всего aka добивания
-
+- [ ] Рикролла
 ##### Сделать:
 - [x] Инвиз для бота чтоб беспалевно
 
@@ -20,7 +20,7 @@
 - delete - удаляет все каналы [6]
 - kick - кикает всех с сервера [4]
 - roles - удаляет все роли [6]
-
+- rickroll - присылает рандомную ссылку на рикролл [0]
 
 ### Установка:
 ##### 1. Установить нужные библиотеки
@@ -41,7 +41,7 @@
 - [x] For spamming channels
 - [ ] For spamming @everyone everywhere
 - [ ] For deleting everything
-
+- [ ] For rickrolling with random links
 ##### Make:
 - [x] The bot invisible
 
@@ -53,7 +53,7 @@
 - delete - deletes all channels [6]
 - kick - kicks everyone except admins and bots [4]
 - roles - deletes all roles [6]
-
+- rickroll - rickrolls with a random link [0]
 ### Installation:
 ##### 1. Install required libraries
 - Copy the repository 
