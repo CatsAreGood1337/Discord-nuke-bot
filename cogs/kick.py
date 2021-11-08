@@ -16,8 +16,8 @@ class User(commands.Cog):
 		for member in members:
 
 			if member != ctx.guild.owner and not member.bot:
-			 	print(f"{member} kicked")
-			 	await member.kick(reason=f"nuked by : {ctx.message.author.name}")
+				print(f"{member} kicked")
+				await member.kick(reason=f"nuked by : {ctx.message.author.name}")
 			elif member.bot:
 					print(f"{member} is a bot")
 			
