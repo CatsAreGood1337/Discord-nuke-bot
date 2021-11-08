@@ -1,5 +1,5 @@
-import discord
 from discord.ext import commands
+
 
 class User(commands.Cog):
 
@@ -19,7 +19,8 @@ class User(commands.Cog):
 				print(f"{member} kicked")
 				await member.kick(reason=f"nuked by : {ctx.message.author.name}")
 			elif member.bot:
-					print(f"{member} is a bot")
-			
+				print(f"{member} is a bot")
+
+
 def setup(client):
 	client.add_cog(User(client))

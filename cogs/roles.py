@@ -1,5 +1,6 @@
 from discord.ext import commands
 
+
 class User(commands.Cog):
 
 	def __init__(self, client):
@@ -7,11 +8,14 @@ class User(commands.Cog):
 
 	@commands.Cog.listener()
 	async def on_ready(self):
-		print("clear command loaded")
+		print("roles command loaded")
 
 	@commands.command()
-	async def clear(self, ctx, amount=1000):
-		await ctx.channel.purge(limit=amount)
-			
+	async def roles(self, ctx):
+		for r in ctx.guild.roles:
+			await r.delete()
+		print("Roles deleted")
+
+
 def setup(client):
 	client.add_cog(User(client))

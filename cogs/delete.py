@@ -1,4 +1,3 @@
-import discord
 from discord.ext import commands
 
 class User(commands.Cog):
@@ -14,7 +13,7 @@ class User(commands.Cog):
 	async def delete(self, ctx):
 		for c in ctx.guild.channels:
 			await c.delete()
-			print("Channels deleted")
+		print("Channels deleted")
 			
 def setup(client):
 	client.add_cog(User(client))
