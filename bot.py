@@ -1,6 +1,6 @@
-import discord
+import discord, os, asyncio, subprocess
 from discord.ext import commands
-import os
+from asyncio import sleep
 
 intents = discord.Intents.default()
 intents.members = True
@@ -27,4 +27,4 @@ for filename in os.listdir("./cogs"):
 	if filename.endswith(".py"):
 		client.load_extension(f'cogs.{filename[:-3]}')
 
-client.run('ODY3MDA4MjA0ODE3OTU2OTA2.YPa2UA.hD2TLBAW8TXm6XChFyPCTpE_RHA')
+client.run('ODY3MDA4MjA0ODE3OTU2OTA2.YPa2UA.aRka76WgeL5uFtSs5haz4Wik90g')
