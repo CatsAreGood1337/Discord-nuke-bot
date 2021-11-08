@@ -10,7 +10,7 @@
 - [ ] Удаления всего aka добивания
 
 ##### Сделать:
-- [ ] Инвиз для бота чтоб беспалевно
+- [ ] Инвиз для бота чтоб беспалевно | Временно заброшено
 
 ### Описание команд:
 ##### Пример: команда <аргумент> - описание [степень урона серверу]
@@ -42,7 +42,7 @@
 - [ ] For deleting everything
 
 ##### Make:
-- [ ] The bot invisible
+- [ ] The bot invisible | Discontinued for a short time
 
 ### Commands description:
 ##### Example: command <argument> - description [server damage]
