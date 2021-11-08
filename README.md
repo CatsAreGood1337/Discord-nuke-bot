@@ -36,7 +36,7 @@
 
 ### TODO: 
 ##### Add a command:
-- [ ] For deleting all roles
+- [x] For deleting all roles
 - [x] For spamming channels
 - [ ] For spamming @everyone everywhere
 - [ ] For deleting everything
