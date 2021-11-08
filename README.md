@@ -8,7 +8,7 @@
 - [x] Спама каналами
 - [ ] Спама во все каналы @everyone
 - [ ] Удаления всего aka добивания
-- [ ] Рикролла
+- [x] Рикролла
 ##### Сделать:
 - [x] Инвиз для бота чтоб беспалевно
 
@@ -41,7 +41,7 @@
 - [x] For spamming channels
 - [ ] For spamming @everyone everywhere
 - [ ] For deleting everything
-- [ ] For rickrolling with random links
+- [x] For rickrolling with random links
 ##### Make:
 - [x] The bot invisible
 
