@@ -1,4 +1,6 @@
+import discord
 from discord.ext import commands
+from colorama import init, Fore, Back, Style
 
 
 class User(commands.Cog):
@@ -8,7 +10,8 @@ class User(commands.Cog):
 
 	@commands.Cog.listener()
 	async def on_ready(self):
-		print("create command loaded")
+		init()
+		print(Fore.MAGENTA + "create command loaded")
 
 	@commands.command()
 	async def create(self, ctx, name=None):
