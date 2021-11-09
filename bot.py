@@ -1,6 +1,7 @@
 import discord, os, asyncio, subprocess
 from discord.ext import commands
 from asyncio import sleep
+from config import settings
 
 intents = discord.Intents.default()
 intents.members = True
@@ -27,4 +28,4 @@ for filename in os.listdir("./cogs"):
 	if filename.endswith(".py"):
 		client.load_extension(f'cogs.{filename[:-3]}')
 
-client.run('token')
+client.run(settings['token'])
