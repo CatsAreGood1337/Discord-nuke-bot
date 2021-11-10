@@ -1,8 +1,7 @@
-import discord, os, asyncio, subprocess
+import discord, os
 from discord.ext import commands
-from asyncio import sleep
-from config import settings
-from colorama import init, Fore, Back, Style
+from last_fork.config import settings
+from colorama import init, Fore
 
 intents = discord.Intents.default()
 intents.members = True
@@ -31,7 +30,7 @@ async def reload(ctx, extension):
 for filename in os.listdir("./cogs"):
 	if filename.endswith(".py"):
 		client.load_extension(f'cogs.{filename[:-3]}')
-    init()
+		init()
 		print(Fore.MAGENTA + f"{filename[:-3]} loaded")
   
 client.run(settings['token'])
