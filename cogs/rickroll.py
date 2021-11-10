@@ -1,6 +1,6 @@
 from discord.ext import commands
 import random
-
+from colorama import init, Fore, Back, Style
 class User(commands.Cog):
 
 	def __init__(self, client):
@@ -8,7 +8,8 @@ class User(commands.Cog):
 
 	@commands.Cog.listener()
 	async def on_ready(self):
-		pass
+    init()
+    pass
 
 	@commands.command()
 	async def rickroll(self, ctx):
@@ -20,7 +21,8 @@ class User(commands.Cog):
 				 'https://www.youtube.com/watch?v=xm3YgoEiEDc',
 				 'https://www.youtube.com/watch?v=IO9XlQrEt2Y']
 		await ctx.send("<" + links[random.randint(0, len(links))] + ">")
-		print(f"Rickrolled:")
+    
+		print(Fore.GREEN + f"Rickrolled")
 
 def setup(client):
 	client.add_cog(User(client))

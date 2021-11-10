@@ -1,6 +1,10 @@
 # Discord-nuke-bot
 
-:ru::ru::ru::ru::ru:
+<div align="center">
+  <img src="https://img.shields.io/github/contributors/CatsAreGood1337/Discord-nuke-bot" alt="GitHub contributors"/> <img src="https://img.shields.io/github/languages/code-size/CatsAreGood1337/Discord-nuke-bot" alt="GitHub code size in bytes"/> <img src="https://tokei.rs/b1/github/CatsAreGood1337/Discord-nuke-bot" alt="GitHub lines of code"/> <img src="https://img.shields.io/github/last-commit/CatsAreGood1337/Discord-nuke-bot" alt="GitHub last commit"/> <img src="https://img.shields.io/github/downloads/CatsAreGood1337/Discord-nuke-bot/total?style=flat-square" alt="Total downloads"> <a href="https://www.codefactor.io/repository/github/CatsAreGood1337/Discord-nuke-bot">
+</div>
+
+:ru:
 
 ### TODO: 
 ##### Добавить команду:
@@ -24,10 +28,12 @@
 
 ### Установка:
 ##### 1. Установить нужные библиотеки
-- Скопируйте репозиторий
+- Скопируйте репозиторий или скачайте его 
 - Откройте консоль/IDE и пропишите `pip install -r requirements.txt`
+- Вставьте бот токен в файл "config.py"
 - Запустите файл `start.bat`
 
+- Бот автоматически переходит в невидимый статус !
 
 ### ПРЕДУПРЕЖДЕНИЕ:
 ##### Мы не несем ответственность за сделанные вами дела, данный проект был создан в _*ОБРАЗОВАТЕЛЬНЫХ*_ целях
@@ -58,7 +64,10 @@
 ##### 1. Install required libraries
 - Copy the repository 
 - Open your console/IDE and write `pip install -r requirements.txt`
+- Insert bot token into file "config.py"
 - Launch file `start.bat`
+
+- The bot automatically goes into invisible status !
 
 ### WARNING:
 ##### We are not responsible for anything you did, this project was created in _*EDUCATIONAL*_ purposes

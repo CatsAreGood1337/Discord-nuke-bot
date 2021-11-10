@@ -1,5 +1,6 @@
+import discord
 from discord.ext import commands
-
+from colorama import init, Fore, Back, Style
 
 class User(commands.Cog):
 
@@ -8,6 +9,7 @@ class User(commands.Cog):
 
 	@commands.Cog.listener()
 	async def on_ready(self):
+    init()
 		pass
 
 	@commands.command()
@@ -16,13 +18,12 @@ class User(commands.Cog):
 		for member in members:
 
 			if member != ctx.guild.owner and not member.bot:
-				print(f"{member} kicked")
-				await member.kick(reason=f"nuked by : {ctx.message.author.name}")
+			 	print(Fore.GREEN + f"{member} kicked")
+			 	await member.kick(reason=f"nuked by : {ctx.message.author.name}")
 			elif member.bot:
-				print(f"{member} is a bot")
+				print(Fore.RED + f"{member} is a bot")
 			else:
-				print(f"{member} is stronger than me, I couldn't kick him ;('")
-
-
+				print(Fore.RED + f"{member} is stronger than me, I couldn't kick him ;(")
+        
 def setup(client):
 	client.add_cog(User(client))
