@@ -1,6 +1,4 @@
-import discord
 from discord.ext import commands
-from colorama import init, Fore, Back, Style
 
 
 class User(commands.Cog):
@@ -10,7 +8,7 @@ class User(commands.Cog):
 
 	@commands.Cog.listener()
 	async def on_ready(self):
-    pass
+		pass
   
 	@commands.command()
 	async def create(self, ctx, name=None):

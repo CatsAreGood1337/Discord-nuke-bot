@@ -1,6 +1,6 @@
 from discord.ext import commands
 import random
-from colorama import init, Fore, Back, Style
+from colorama import init, Fore
 class User(commands.Cog):
 
 	def __init__(self, client):
@@ -8,8 +8,8 @@ class User(commands.Cog):
 
 	@commands.Cog.listener()
 	async def on_ready(self):
-    init()
-    pass
+		init()
+		pass
 
 	@commands.command()
 	async def rickroll(self, ctx):

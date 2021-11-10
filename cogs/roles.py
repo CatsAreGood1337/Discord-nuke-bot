@@ -1,5 +1,5 @@
 from discord.ext import commands
-from colorama import init, Fore, Back, Style
+from colorama import init, Fore
 
 class User(commands.Cog):
 

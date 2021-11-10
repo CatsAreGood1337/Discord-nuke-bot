@@ -1,6 +1,6 @@
-import discord
+
 from discord.ext import commands
-from colorama import init, Fore, Back, Style
+from colorama import init, Fore
 
 class User(commands.Cog):
 
@@ -9,8 +9,8 @@ class User(commands.Cog):
 
 	@commands.Cog.listener()
 	async def on_ready(self):
-    init()
-	  pass
+		init()
+		pass
 
 	@commands.command()
 	async def clear(self, ctx, amount=1):
@@ -18,7 +18,7 @@ class User(commands.Cog):
 		if amount == 1:
 			print(Fore.GREEN + f"{amount} message cleared")
 		else:
-		  print(Fore.GREEN + f"{amount} messages cleared")
+			print(Fore.GREEN + f"{amount} messages cleared")
 			
 def setup(client):
 	client.add_cog(User(client))
