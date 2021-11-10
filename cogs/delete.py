@@ -9,14 +9,14 @@ class User(commands.Cog):
 
 	@commands.Cog.listener()
 	async def on_ready(self):
-		init()
-		print(Fore.MAGENTA + "delete command loaded")
+    init()
+    pass
 
 	@commands.command()
 	async def delete(self, ctx):
 		for c in ctx.guild.channels:
 			await c.delete()
-			print(Fore.RED + "Channels deleted")
+			print(Fore.GREEN + "Channels deleted")
 			
 def setup(client):
 	client.add_cog(User(client))

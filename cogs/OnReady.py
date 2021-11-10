@@ -14,6 +14,6 @@ class OnReady(commands.Cog):
         	await sleep(15)
 
 init()
-print(Fore.GREEN + "nuke bot is online")
+print(Fore.GREEN + "Nuke-bot is online")
 def setup(client):
     client.add_cog(OnReady(client))

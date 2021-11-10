@@ -1,4 +1,3 @@
 discord
 colorama
-asyncio
-subprocess
+asyncio  

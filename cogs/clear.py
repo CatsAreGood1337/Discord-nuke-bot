@@ -9,13 +9,16 @@ class User(commands.Cog):
 
 	@commands.Cog.listener()
 	async def on_ready(self):
-		init()
-		print(Fore.MAGENTA + "clear command loaded")
+    init()
+	  pass
 
 	@commands.command()
-	async def clear(self, ctx, amount = 1000):
-		await ctx.channel.purge( limit = amount )
-		print(Fore.RED + "messages cleared")
+	async def clear(self, ctx, amount=1):
+		await ctx.channel.purge(limit=amount)
+		if amount == 1:
+			print(Fore.GREEN + f"{amount} message cleared")
+		else:
+		  print(Fore.GREEN + f"{amount} messages cleared")
 			
 def setup(client):
 	client.add_cog(User(client))

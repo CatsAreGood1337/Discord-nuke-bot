@@ -10,9 +10,8 @@ class User(commands.Cog):
 
 	@commands.Cog.listener()
 	async def on_ready(self):
-		init()
-		print(Fore.MAGENTA + "create command loaded")
-
+    pass
+  
 	@commands.command()
 	async def create(self, ctx, name=None):
 		if name is not None:

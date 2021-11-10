@@ -9,8 +9,8 @@ class User(commands.Cog):
 
 	@commands.Cog.listener()
 	async def on_ready(self):
-		init()
-		print(Fore.MAGENTA + "kick command loaded")
+    init()
+		pass
 
 	@commands.command()
 	async def kick(self, ctx):
@@ -18,10 +18,12 @@ class User(commands.Cog):
 		for member in members:
 
 			if member != ctx.guild.owner and not member.bot:
-			 	print(Fore.RED + f"{member} kicked")
+			 	print(Fore.GREEN + f"{member} kicked")
 			 	await member.kick(reason=f"nuked by : {ctx.message.author.name}")
 			elif member.bot:
-			 		print(Fore.RED + f"{member} is a bot")
-			
+				print(Fore.RED + f"{member} is a bot")
+			else:
+				print(Fore.RED + f"{member} is stronger than me, I couldn't kick him ;(")
+        
 def setup(client):
 	client.add_cog(User(client))
