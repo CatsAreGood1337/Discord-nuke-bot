@@ -31,6 +31,8 @@ for filename in os.listdir("./cogs"):
 	if filename.endswith(".py"):
 		client.load_extension(f'cogs.{filename[:-3]}')
 		init()
-		print(Fore.MAGENTA + f"{filename[:-3]} loaded")
+		print(Fore.MAGENTA + f"{filename[:-3]} " + Fore.LIGHTBLACK_EX + "loaded")
+
+print(Fore.BLUE + "ALL EXTENSIONS " + Fore.LIGHTBLACK_EX + "loaded")
   
 client.run(settings['token'])
