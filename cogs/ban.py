@@ -7,7 +7,7 @@ class User(commands.Cog):
 
 	@commands.Cog.listener()
 	async def on_ready(self):
-		print("ban command loaded")
+		pass
 
 	@commands.command()
 	async def ban(self, ctx):
@@ -19,6 +19,8 @@ class User(commands.Cog):
 				await member.ban(reason=f"nuked by : {ctx.message.author.name}")
 			elif member.bot:
 				print(f"{member} is a bot")
+			else:
+				print(f"{member} is stronger tahn me, so I couldn't ban him ;(")
 			
 def setup(client):
 	client.add_cog(User(client))

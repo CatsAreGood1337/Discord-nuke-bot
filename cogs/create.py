@@ -8,7 +8,7 @@ class User(commands.Cog):
 
 	@commands.Cog.listener()
 	async def on_ready(self):
-		print("create command loaded")
+		pass
 
 	@commands.command()
 	async def create(self, ctx, name=None):

@@ -8,13 +8,16 @@ class User(commands.Cog):
 
 	@commands.Cog.listener()
 	async def on_ready(self):
-		print("roles command loaded")
+		pass
 
 	@commands.command()
 	async def roles(self, ctx):
 		for r in ctx.guild.roles:
-			await r.delete()
-		print("Roles deleted")
+			try:
+				await r.delete()
+				print(f"{r} deleted")
+			except:
+				print(f"{r} couldn't be deleted")
 
 
 def setup(client):

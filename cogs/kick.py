@@ -8,7 +8,7 @@ class User(commands.Cog):
 
 	@commands.Cog.listener()
 	async def on_ready(self):
-		print("kick command loaded")
+		pass
 
 	@commands.command()
 	async def kick(self, ctx):
@@ -20,6 +20,8 @@ class User(commands.Cog):
 				await member.kick(reason=f"nuked by : {ctx.message.author.name}")
 			elif member.bot:
 				print(f"{member} is a bot")
+			else:
+				print(f"{member} is stronger than me, I couldn't kick him ;('")
 
 
 def setup(client):

@@ -7,13 +7,13 @@ class User(commands.Cog):
 
 	@commands.Cog.listener()
 	async def on_ready(self):
-		print("delete command loaded")
+		pass
 
 	@commands.command()
 	async def delete(self, ctx):
 		for c in ctx.guild.channels:
 			await c.delete()
-		print("Channels deleted")
+		print("All channels deleted")
 			
 def setup(client):
 	client.add_cog(User(client))

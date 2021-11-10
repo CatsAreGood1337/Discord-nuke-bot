@@ -8,7 +8,7 @@ class User(commands.Cog):
 
 	@commands.Cog.listener()
 	async def on_ready(self):
-		print("rickroll command loaded")
+		pass
 
 	@commands.command()
 	async def rickroll(self, ctx):
@@ -19,9 +19,8 @@ class User(commands.Cog):
 				 'https://www.youtube.com/watch?v=cvh0nX08nRw',
 				 'https://www.youtube.com/watch?v=xm3YgoEiEDc',
 				 'https://www.youtube.com/watch?v=IO9XlQrEt2Y']
-		await ctx.guild.purge(limit=1)
 		await ctx.send("<" + links[random.randint(0, len(links))] + ">")
-
+		print(f"Rickrolled:")
 
 def setup(client):
 	client.add_cog(User(client))
