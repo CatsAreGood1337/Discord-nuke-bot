@@ -4,7 +4,7 @@
   <img src="https://img.shields.io/github/contributors/CatsAreGood1337/Discord-nuke-bot" alt="GitHub contributors"/> <img src="https://img.shields.io/github/languages/code-size/CatsAreGood1337/Discord-nuke-bot" alt="GitHub code size in bytes"/> <img src="https://tokei.rs/b1/github/CatsAreGood1337/Discord-nuke-bot" alt="GitHub lines of code"/> <img src="https://img.shields.io/github/last-commit/CatsAreGood1337/Discord-nuke-bot" alt="GitHub last commit"/> <img src="https://img.shields.io/github/downloads/CatsAreGood1337/Discord-nuke-bot/total?style=flat-square" alt="Total downloads"> <a href="https://www.codefactor.io/repository/github/CatsAreGood1337/Discord-nuke-bot">
 </div>
 
-:ru:
+:ru::ru::ru::ru::ru:
 
 ### TODO: 
 ##### Добавить команду:
